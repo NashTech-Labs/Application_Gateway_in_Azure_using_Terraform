@@ -13,10 +13,6 @@ resource "azurerm_public_ip" "public_ip" {
   domain_name_label   = var.domain_name_label_VV
 }
 
-# data "azurerm_resource_group" "app-gw-rg" {
-#   name     = azurerm_resource_group.app-gw-rg.name #"${var.name_VV}-rg"
-#   location = az #var.location_VV
-# }
 resource "azurerm_resource_group" "app-gw-rg" {
   name     = "${var.name_VV}-rg"
   location = var.location_VV

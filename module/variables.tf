@@ -133,11 +133,13 @@ variable "health_probes_VV" {
 variable "sku_name_VV" {
   type    = string
   default = "WAF_v2"
+  description = "SKU Name"
 }
 
 variable "sku_tier_VV" {
   type    = string
   default = "WAF_v2"
+  description = "Type of SKU"
 }
 
 variable "sku_capacity_VV" {
@@ -173,7 +175,7 @@ variable "private_link_frontend_ip_name_VV" {
 }
 
 variable "domain_name_label_VV" {
-  description = "The domain name label for public IP. Leave it as null if not needed."
+  description = "The domain name label for public IP. Leave it as null if not needed"
   type        = string
   default     = null
 }
